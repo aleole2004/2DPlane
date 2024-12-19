@@ -19,8 +19,7 @@ public class Bullets : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        instBullet.transform.position += new Vector3 (0,1,0) * speed * Time.deltaTime;
-        
+        instBullet.transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
     public void OnCreateBullets ()
     {
